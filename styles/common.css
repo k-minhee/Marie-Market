@@ -1,0 +1,25 @@
+header {
+    position: fixed; left: 0; top: 0; z-index: 999;
+    background-color: #fff;
+    width: 210px; height: 100vh;
+    padding: 30px 0 40px 40px;
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+header .h_top {}
+header .h_top h1 {padding-bottom: 20px; border-bottom: 1px solid #E6E6E6; margin-bottom: 40px;}
+header .h_top h1 a {}
+header .h_top h1 a img {}
+header .h_top nav {}
+header .h_top nav a,
+header .user_menu a {
+    display: block;
+    font-family: "Lora", serif; font-size: 0.83rem;
+    margin-bottom: 15px;
+}
+header .h_top nav a:hover,
+header .user_menu a:hover {
+    font-weight: 600;
+}
+header .h_top nav a {}
+header .user_menu {}
+header .user_menu a {}
