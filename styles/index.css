@@ -15,7 +15,7 @@
 .title a {}
 .title a img {}
 main .main_contents_detail {}
-main .main_contents_detail > div {margin-bottom: 8px; background-color: coral;}
+main .main_contents_detail > div {margin: 12px 0 8px 0; background-color: coral;}
 main .main_contents_detail > div > p {
     border: 1px solid rgba(0,0,0,0.3); display: inline-block;
     width: 15px; height: 12px; border-radius: 15px;
@@ -28,6 +28,7 @@ main .main_contents_detail .main_c_title {font-size: 0.88rem;}
 main .main_contents_detail .main_c_title {margin-bottom: 8px;}
 /* 전체 컨텐츠 사이 간격 */
 .contents_wrap > div {margin-bottom: 160px;}
+.contents_wrap > div:last-child {margin-bottom: 0;}
 /* main 배너 */
 main {}
 main .main_bnr {
@@ -92,7 +93,7 @@ main .main_bnr > a span {
 .contents_wrap .md_wrap .md_contents_wrap {display: flex; max-width: 100%;}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents {position: relative;}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents  {position: relative;}
-.contents_wrap .md_wrap .md_contents_wrap .md_contents .md_bg_img {background-color: aqu;}
+.contents_wrap .md_wrap .md_contents_wrap .md_contents .md_bg_img {}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_bg_img img {width: 100%;}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_bg_img .md_black {
     background-color: rgba(0,0,0,0.35); width: 100%; height: 100%;
@@ -108,7 +109,7 @@ main .main_bnr > a span {
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_content_detail:nth-child(3) {}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_content_detail:nth-child(4) {}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_content_detail .md_title_small {
-    background-color: coral;  display: flex; align-items: center;
+    display: flex; align-items: center;
     width: calc(100% - 42px);
 }
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_title_small .md_img {margin-right: 6px;}
@@ -117,7 +118,7 @@ main .main_bnr > a span {
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_title_small .md_info .md_title,
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_title_small .md_info .md_price {font-size: 0.81rem; color: #fff;}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_title_small .md_info .md_title {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_content_detail .md_more {}
 /* 신제품 */
@@ -156,7 +157,7 @@ main .main_bnr > a span {
 .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small > p > img {}
 .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small .new_detail {}
 .review_wrap .review_wrapper .review_slide .swiper-slide .review_link .re_title_small .new_detail > p {
-    font-size: 0.88rem;
+    font-size: 0.88rem; margin-bottom: 5px;
 }
 .review_wrap .review_wrapper .review_slide .swiper-slide .review_link > p {}
 .review_wrap .review_wrapper .review_slide .swiper-slide .review_link > p img {}

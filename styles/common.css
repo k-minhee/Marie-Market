@@ -23,3 +23,22 @@ header .user_menu a:hover {
 header .h_top nav a {}
 header .user_menu {}
 header .user_menu a {}
+/* footer */
+footer {
+    padding: 30px 40px; background-color: pink;
+    max-width:1710px; min-width:320px;
+    margin-left: 210px;
+    padding-top: 50px;
+}
+footer * p,
+footer * a {font-size: 0.69rem; color: #2A2A2A;}
+footer .f_top {display: flex;}
+footer .f_top .ft_1 {}
+footer .f_top .ft_1 a {
+    background-color: aqua; display: flex; flex-flow: column nowrap;
+    margin-bottom: 8px;
+}
+footer .f_top address {margin-left: 280px;}
+footer .f_top address p {margin-bottom: 8px;}
+footer .f_btm {display: flex; justify-content: space-between; margin-top: 70px;}
+footer .f_btm p {}
