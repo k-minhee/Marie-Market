@@ -13,13 +13,13 @@ main ul li a {
 main ul li a:hover {background-color: rgba(0,0,0,0.1);}
 main ul li .active {border: 1px solid #000;}
 main .list_wrap {display: flex; flex-flow: row wrap; justify-content: space-between;}
-main .list_wrap .list_contents_wrap {width: calc((100% (20px * 4)) / 5); margin-bottom: 68px;}
+main .list_wrap .list_contents_wrap {width: calc((100% - (20px * 4)) / 5); margin-bottom: 68px;}
 /* 마지막 컨텐츠 사이 간격 */
-main .list_wrap .list_contents_wrap:nth-child(16),
+/* main .list_wrap .list_contents_wrap:nth-child(16),
 main .list_wrap .list_contents_wrap:nth-child(17),
 main .list_wrap .list_contents_wrap:nth-child(18),
 main .list_wrap .list_contents_wrap:nth-child(19),
-main .list_wrap .list_contents_wrap:nth-child(20) {margin: 0;}
+main .list_wrap .list_contents_wrap:nth-child(20) {margin: 0;} */
 
 main .list_wrap .list_contents_wrap .cloth_img {
     display: block; margin-bottom: 16px; overflow: hidden;
@@ -42,10 +42,10 @@ main .list_wrap .list_contents_wrap .cloth_contents .cloth_title,
 main .list_wrap .list_contents_wrap .cloth_contents .cloth_price {
     font-size: 0.88rem; letter-spacing: -0.02em;
 }
-main .list_wrap .list_contents_wrap .cloth_contents .cloth_title {margin-bottom: 8px;}
+main .list_wrap .list_contents_wrap .cloth_contents .cloth_title {margin-bottom: 8px; line-height: 1.4;}
 main .viewmore {
     font-size: 0.94rem; border: 1px solid #e6e6e6;
     display: block; margin: 0 auto; width: 180px; padding: 11px;
-    text-align: center; margin-top: 140px; margin-bottom: 100px;
+    text-align: center; margin-top: 20px; margin-bottom: 80px;
 }
 main .viewmore:hover {background-color: rgba(0,0,0,0.1);}

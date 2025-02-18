@@ -11,8 +11,8 @@
 .title h1 {
     font-family: "Lora", serif; font-size: 1.13rem; margin-bottom: 10px;
 }
-.title a {}
-.title a img {}
+.title a {width: 30px; height: 20px; display: inline-block;}
+.title a img {width: 100%;}
 main .main_contents_detail {}
 main .main_contents_detail > div {margin: 8px 0 2px 0;}
 main .main_contents_detail > div > p {
@@ -102,7 +102,7 @@ main .main_bnr > a span {
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_black:first-child {background-color: none;}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_bg_img > .active {background-color: none;}
 .contents_wrap .md_wrap .md_contents_wrap .md_contents .md_content_detail {
-    position: absolute; width:calc(100% - 24px); background-color: rgba(0,0,0,0.7);
+    position: absolute; width:calc(100% - 24px); background-color: rgba(0,0,0,0.6);
     bottom: -120px; left: 12px; border-radius: 2px; z-index: 700;
     display: flex; align-items: center; justify-content: space-between; padding: 8px;
 }
@@ -143,8 +143,9 @@ main .main_bnr > a span {
     padding-right: 40px;
 }
 .contents_wrap .new_wrap .new_contents > div {width: calc((100% - (8px * 4)) / 5);}
-.contents_wrap .new_wrap .new_contents > div > a {}
-.contents_wrap .new_wrap .new_contents > div > a > img {width: 100%;}
+.contents_wrap .new_wrap .new_contents > div > a {overflow: hidden; display: inline-block;}
+.contents_wrap .new_wrap .new_contents > div > a > img {width: 100%; transition: transform 0.3s;}
+.contents_wrap .new_wrap .new_contents > div > a > img:hover {transform: scale(1.03);}
 /* review */
 .review_wrap {}
 .review_wrap .review_wrapper {}

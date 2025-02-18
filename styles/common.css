@@ -48,6 +48,7 @@ footer {
     max-width:1710px; min-width:320px;
     margin-left: 210px;
     padding-top: 50px;
+    border-top: 1px solid #eee;
 }
 footer * p,
 footer * a {font-size: 0.69rem; color: #2A2A2A;}
@@ -61,3 +62,9 @@ footer .f_top address {margin-left: 280px;}
 footer .f_top address p {margin-bottom: 8px;}
 footer .f_btm {display: flex; justify-content: space-between; margin-top: 70px;}
 footer .f_btm p {}
+
+@media screen and (max-width:1300px) {
+    header {left: -300px;}
+    .header_wrap .hamburger_menu {display: block;}
+    .header_wrap .logo_center {display: block;}
+}
