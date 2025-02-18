@@ -1,3 +1,4 @@
+.header_wrap {position: relative;}
 header {
     position: fixed; left: 0; top: 0; z-index: 999;
     background-color: #fff;
@@ -23,9 +24,27 @@ header .user_menu a:hover {
 header .h_top nav a {}
 header .user_menu {}
 header .user_menu a {}
+/* 반응형 제작 시 메뉴 */
+.header_wrap .hamburger_menu {
+    position: fixed; top: 30px; left: 40px;
+    z-index: 900; display: none;
+}
+.header_wrap  .hamburger_menu img {}
+.header_wrap .logo_center {
+    position: absolute; top: 30px; left: 50%;
+    z-index: 900; transform: translateX(-50%);
+    display: none;
+
+}
+.header_wrap .logo_center img {}
+.header_wrap .cover_black_viewport {
+    position: fixed; width: 100%; height: 100%;
+    z-index: 900; background-color: rgba(0,0,0,0.5);
+    display: none;
+}
 /* footer */
 footer {
-    padding: 30px 40px; background-color: pink;
+    padding: 30px 40px;
     max-width:1710px; min-width:320px;
     margin-left: 210px;
     padding-top: 50px;
@@ -35,7 +54,7 @@ footer * a {font-size: 0.69rem; color: #2A2A2A;}
 footer .f_top {display: flex;}
 footer .f_top .ft_1 {}
 footer .f_top .ft_1 a {
-    background-color: aqua; display: flex; flex-flow: column nowrap;
+    display: flex; flex-flow: column nowrap;
     margin-bottom: 8px;
 }
 footer .f_top address {margin-left: 280px;}

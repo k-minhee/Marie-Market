@@ -8,7 +8,7 @@ main .detail_top {
     display: flex; justify-content: space-between;
 }
 /* 컨텐츠 사이 공통간격 */
-main .detail_top .detail_big_img {width: calc((100% - 50px) / 2);}
+main .detail_top .detail_big_img {width: calc((100% - 60px) / 2);}
 main .detail_top .detail_big_img img {width: 100%;}
 main .detail_top .detail_top_right {
     width: calc((100% - 90px) / 2);

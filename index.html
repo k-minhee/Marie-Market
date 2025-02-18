@@ -9,39 +9,49 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 외부스타일시트 -->
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <!-- 웹폰트 연결 -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
     <!-- JS -->
     <script src="./script/common.js" defer></script>
     <script src="./script/index.js" defer></script>
 </head>
 <body>
-    <!-- 헤더 -->
-    <header>
-        <div class="h_top">
-            <h1><a href="./index.html"><img src="./images/logo.png" alt="#"></a></h1>
-            <nav>
-                <a href="#">Made-Marie</a>
-                <a href="#">Marie-Jeans</a>
-                <a href="#">New</a>
-                <a href="#">Best</a>
-                <a href="#">Outer</a>
-                <a href="#">Top</a>
-                <a href="#">Bottom</a>
-                <a href="#">Dress/Set</a>
-                <a href="#">ACC</a>
-                <a href="#">Shoes</a>
-            </nav>
-        </div>
-        <div class="user_menu">
-            <a href="#">Login</a>
-            <a href="#">Cart</a>
-            <a href="#">Search</a>
-        </div>
-    </header>
+    <div class="header_wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="h_top">
+                <h1><a href="./index.html"><img src="./images/logo.png" alt="#"></a></h1>
+                <nav>
+                    <a href="./product_list.html">Made-Marie</a>
+                    <a href="./product_list.html">Marie-Jeans</a>
+                    <a href="./product_list.html">New</a>
+                    <a href="./product_list.html">Best</a>
+                    <a href="./product_list.html">Outer</a>
+                    <a href="./product_list.html">Top</a>
+                    <a href="./product_list.html">Bottom</a>
+                    <a href="./product_list.html">Dress/Set</a>
+                    <a href="./product_list.html">ACC</a>
+                    <a href="./product_list.html">Shoes</a>
+                </nav>
+            </div>
+            <div class="user_menu">
+                <a href="#">Login</a>
+                <a href="#">Cart</a>
+                <a href="#">Search</a>
+            </div>
+        </header>
+        <!-- 반응형 제작을 위한 메뉴 -->
+        <a href="#" class="hamburger_menu"><img src="./images/hamburger.png" alt="카테고리 메뉴"></a>
+        <h2><a href="#" class="logo_center"><img src="./images/logo_center.png" alt="카테고리 메뉴"></a></h2>
+        <p class="cover_black_viewport"></p>
+    </div>
     <!-- main 시작 -->
     <main>
         <!-- 메인 동영상 배너 -->
@@ -68,8 +78,8 @@
                 </div>
                 <!-- best상품 slide -->
                 <div class="b_wrapper">
-                    <div class="swiper-button-prev"></div>
                     <div class="swiper best_slide">
+                        <div class="swiper-button-prev"></div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide item1">
                                 <a href="./product_detail.html"><img src="./images/best_items_01.jpg" alt="마리슬랙스 바로가기"></a>
@@ -182,8 +192,8 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <div class="swiper-button-next"></div>
                 </div>
             </div>
             <!-- ==================================MD PICK -->
@@ -194,11 +204,11 @@
                 </div>
                 <div class="md_contents_wrap">
                     <a href="./product_detail.html" class="md_contents">
+                        <p class="md_black"></p>
                         <p class="md_bg_img">
                             <img src="./images/md_pick_01.jpg" alt="">
-                            <span class="md_black active"></span>
                         </p>
-                        <div class="md_content_detail">
+                        <div class="md_content_detail active">
                             <div class="md_title_small">
                                 <p class="md_img"><img src="./images/md_small01.jpg" alt=""></p>
                                 <div class="md_info">
@@ -208,11 +218,15 @@
                             </div>
                             <p class="md_more"><img src="./images/more_w.png" alt=""></p>
                         </div>
+                        <p class="md_plus_link">
+                            <img src="./images/md_plus_icon.png" alt="">
+                            <span>Made-Marie<br>Trench Coat</span>
+                        </p>
                     </a>
                     <a href="./product_detail.html" class="md_contents">
+                        <p class="md_black"></p>
                         <p class="md_bg_img">
                             <img src="./images/md_pick_02.jpg" alt="">
-                            <span class="md_black"></span>
                         </p>
                         <div class="md_content_detail">
                             <div class="md_title_small">
@@ -224,11 +238,15 @@
                             </div>
                             <p class="md_more"><img src="./images/more_w.png" alt=""></p>
                         </div>
+                        <p class="md_plus_link">
+                            <img src="./images/md_plus_icon.png" alt="">
+                            <span>Made-Marie<br>Trench Coat</span>
+                        </p>
                     </a>
                     <a href="./product_detail.html" class="md_contents">
+                        <p class="md_black"></p>
                         <p class="md_bg_img">
                             <img src="./images/md_pick_03.jpg" alt="">
-                            <span class="md_black"></span>
                         </p>
                         <div class="md_content_detail">
                             <div class="md_title_small">
@@ -240,11 +258,15 @@
                             </div>
                             <p class="md_more"><img src="./images/more_w.png" alt=""></p>
                         </div>
+                        <p class="md_plus_link">
+                            <img src="./images/md_plus_icon.png" alt="">
+                            <span>Made-Marie<br>Trench Coat</span>
+                        </p>
                     </a>
                     <a href="./product_detail.html" class="md_contents">
+                        <p class="md_black"></p>
                         <p class="md_bg_img">
                             <img src="./images/md_pick_04.jpg" alt="">
-                            <span class="md_black"></span>
                         </p>
                         <div class="md_content_detail">
                             <div class="md_title_small">
@@ -256,6 +278,10 @@
                             </div>
                             <p class="md_more"><img src="./images/more_w.png" alt=""></p>
                         </div>
+                        <p class="md_plus_link">
+                            <img src="./images/md_plus_icon.png" alt="">
+                            <span>Made-Marie<br>Trench Coat</span>
+                        </p>
                     </a>
                 </div>
             </div>
