@@ -20,6 +20,7 @@ const bestSlide = new Swiper('.best_slide', {
         prevEl: '.best_slide .swiper-button-prev',
     },
 })
+/* review 스와이퍼 */
 const reviewSlide = new Swiper('.review_slide', {
     spaceBetween: 8,
 
@@ -44,13 +45,44 @@ const reviewSlide = new Swiper('.review_slide', {
 })
 console.log ('.bestSlide');
 
+/* best 카테고리 선택 */
+const bestCategory = document.querySelectorAll('.best_wrap .best_category > a');
+console.log('=====================================')
+console.log(bestCategory)
+
+bestCategory[0].addEventListener('click', (e)=>{e.preventDefault();})
+bestCategory[1].addEventListener('click', (e)=>{e.preventDefault();})
+bestCategory[2].addEventListener('click', (e)=>{e.preventDefault();})
+bestCategory[3].addEventListener('click', (e)=>{e.preventDefault();})
+
+function bestCategoryRemove (){
+    bestCategory[0].classList.remove ('active');
+    bestCategory[1].classList.remove ('active');
+    bestCategory[2].classList.remove ('active');
+    bestCategory[3].classList.remove ('active');
+}
+bestCategory[0].addEventListener('click',function(){
+    bestCategoryRemove();
+    bestCategory[0].classList = 'active';
+})
+bestCategory[1].addEventListener('click',function(){
+    bestCategoryRemove();
+    bestCategory[1].classList = 'active';
+})
+bestCategory[2].addEventListener('click',function(){
+    bestCategoryRemove();
+    bestCategory[2].classList = 'active';
+})
+bestCategory[3].addEventListener('click',function(){
+    bestCategoryRemove();
+    bestCategory[3].classList = 'active';
+})
+
 /* MD PICK 호버 시 설명 나타나기 */
 const mdContentsWrap = document.querySelectorAll('.md_contents_wrap .md_contents')
 const mdBlack = document.querySelectorAll('.md_black')
 const mdContentDetail = document.querySelectorAll('.md_contents_wrap .md_contents .md_content_detail');
 console.log(mdContentsWrap, mdContentDetail, mdBlack);
-
-
 
 function coverBlack (){
     mdBlack[0].style.height = '100%'
@@ -58,14 +90,12 @@ function coverBlack (){
     mdBlack[2].style.height = '100%'
     mdBlack[3].style.height = '100%'
 }
-
 function revmoeDetailPosition (){
     mdContentDetail[0].style.bottom = '-120px'
     mdContentDetail[1].style.bottom = '-120px'
     mdContentDetail[2].style.bottom = '-120px'
     mdContentDetail[3].style.bottom = '-120px'
 }
-
 mdContentsWrap[0].addEventListener('mouseover',function(){
     coverBlack();
     revmoeDetailPosition();

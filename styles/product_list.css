@@ -10,8 +10,8 @@ main ul li a {
     display: inline-block; font-family: "Lora", serif; font-size: 0.81rem;
     padding: 10px 20px; border: 1px solid #E6E6E6;
 }
+main ul li > .active {border: 1px solid #000;}
 main ul li a:hover {background-color: rgba(0,0,0,0.1);}
-main ul li .active {border: 1px solid #000;}
 main .list_wrap {display: flex; flex-flow: row wrap; justify-content: space-between;}
 main .list_wrap .list_contents_wrap {width: calc((100% - (20px * 4)) / 5); margin-bottom: 68px;}
 /* 마지막 컨텐츠 사이 간격 */
