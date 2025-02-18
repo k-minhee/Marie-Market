@@ -1,0 +1,27 @@
+@media screen and (max-width:1300px) {
+    main {margin-left: 0; padding: 80px 40px;}
+    main .detail_top {padding: 0px; padding-top: 50px; margin-bottom: 110px;}
+    main .detail_top .detail_big_img {width: calc((100% - 30px) / 2);}
+    main .detail_top .detail_top_right {width: calc((100% - 45px) / 2);}
+    main .detail_top .detail_top_right > * {margin-bottom: 40px;}
+    main .detail_btm .detail_category {margin-bottom: 60px;}
+    main .detail_btm .detail_contents .product_review .photo_review {margin-bottom: 60px;}
+}
+@media screen and (max-width:750px){
+    main .detail_top {flex-flow: column nowrap; justify-content: flex-start;}
+    main .detail_top .detail_big_img {width: 100%;  margin-bottom: 32px;}
+    main .detail_top .detail_top_right {width: 100%;}
+    main .detail_top .detail_top_right > * {margin-bottom: 28px;}
+}
+@media screen and (max-width:650px){
+    main {margin-left: 0; padding: 60px 12px;}
+    main .detail_top {padding-top: 30px;}
+    main .detail_btm .detail_contents .product_review .review_contents ul li .user_info {width: 100%}
+    main .detail_btm .detail_contents .product_review .review_contents ul li .user_info > * {
+        display: inline-block; margin-right: 10px;
+    }
+    main .detail_btm .detail_contents .product_review .review_contents ul li {flex-flow: column nowrap;}
+    main .detail_btm .detail_contents .product_review .review_contents ul li .review_text {
+        width: 100%;
+    }
+}

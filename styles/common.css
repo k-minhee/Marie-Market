@@ -68,3 +68,6 @@ footer .f_btm p {}
     .header_wrap .hamburger_menu {display: block;}
     .header_wrap .logo_center {display: block;}
 }
+@media screen and (max-width:650px) {
+    .header_wrap .hamburger_menu {left: 12px;}
+}
