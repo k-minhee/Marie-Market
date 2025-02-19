@@ -5,7 +5,7 @@ const bestSlide = new Swiper('.best_slide', {
     breakpoints:{
         1300: {slidesPerView:4,},
         780: {slidesPerView:4.2,},
-        360: {slidesPerView:3.1},
+        300: {slidesPerView:3.1},
     },
 
     autoplay: {

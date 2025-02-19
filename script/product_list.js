@@ -1,4 +1,4 @@
-const listCategory = document.querySelectorAll('.h_top nav > a');
+const listCategory = document.querySelectorAll('main li > a');
 console.log(listCategory)
 
 function listCategoryRemove (){
@@ -10,8 +10,6 @@ function listCategoryRemove (){
     listCategory[5].classList.remove ('active');
     listCategory[6].classList.remove ('active');
     listCategory[7].classList.remove ('active');
-    listCategory[8].classList.remove ('active');
-    listCategory[9].classList.remove ('active');
 }
 
 listCategory[0].addEventListener('click',function(){
@@ -24,33 +22,25 @@ listCategory[1].addEventListener('click',function(){
 })
 listCategory[2].addEventListener('click',function(){
     listCategoryRemove();
-    listCategory[2].classList = 'active';
+    listCategory[2].classList= 'active';
 })
 listCategory[3].addEventListener('click',function(){
     listCategoryRemove();
-    listCategory[3].classList = 'active';
+    listCategory[3].classList= 'active';
 })
 listCategory[4].addEventListener('click',function(){
     listCategoryRemove();
-    listCategory[4].classList = 'active';
+    listCategory[4].classList= 'active';
 })
 listCategory[5].addEventListener('click',function(){
     listCategoryRemove();
-    listCategory[5].classList = 'active';
+    listCategory[5].classList= 'active';
 })
 listCategory[6].addEventListener('click',function(){
     listCategoryRemove();
-    listCategory[6].classList = 'active';
+    listCategory[6].classList= 'active';
 })
 listCategory[7].addEventListener('click',function(){
     listCategoryRemove();
-    listCategory[7].classList = 'active';
-})
-listCategory[8].addEventListener('click',function(){
-    listCategoryRemove();
-    listCategory[8].classList = 'active';
-})
-listCategory[9].addEventListener('click',function(){
-    listCategoryRemove();
-    listCategory[9].classList = 'active';
+    listCategory[7].classList= 'active';
 })
