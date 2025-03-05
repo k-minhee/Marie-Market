@@ -9,7 +9,7 @@
 }
 @media screen and (max-width:750px){
     main .detail_top {flex-flow: column nowrap; justify-content: flex-start;}
-    main .detail_top .detail_big_img {width: 100%;  margin-bottom: 32px;}
+    main .detail_top .detail_big_img {width: 100%; height: 600px; overflow: hidden; margin-bottom: 32px;}
     main .detail_top .detail_top_right {width: 100%;}
     main .detail_top .detail_top_right > * {margin-bottom: 28px;}
 }
@@ -23,5 +23,8 @@
     main .detail_btm .detail_contents .product_review .review_contents ul li {flex-flow: column nowrap;}
     main .detail_btm .detail_contents .product_review .review_contents ul li .review_text {
         width: 100%;
+    }
+    main .detail_btm .detail_contents .product_review .review_contents ul li .review_text .text p:nth-child(2) {
+        font-size: 0.74rem;
     }
 }
