@@ -38,6 +38,26 @@ main .list_wrap .list_contents_wrap .cloth_contents .cloth_color > p {
 }
 main .list_wrap .list_contents_wrap .cloth_contents .cloth_color > p:first-child {background-color: #000;}
 main .list_wrap .list_contents_wrap .cloth_contents .cloth_color > p:last-child {background-color: #959595;}
+/* 개별 색상 */
+main .list_wrap .list_contents_wrap:nth-child(2) .cloth_contents .cloth_color > p:first-child {background-color: #3e6dc4;}
+main .list_wrap .list_contents_wrap:nth-child(2) .cloth_contents .cloth_color > p:last-child {background-color: #292b31;}
+main .list_wrap .list_contents_wrap:nth-child(6) .cloth_contents .cloth_color > p:first-child {background-color: #387dd8;}
+main .list_wrap .list_contents_wrap:nth-child(6) .cloth_contents .cloth_color > p:last-child {background-color: #e6ee9e;}
+main .list_wrap .list_contents_wrap:nth-child(7) .cloth_contents .cloth_color > p:first-child {background-color: #881b08;}
+main .list_wrap .list_contents_wrap:nth-child(7) .cloth_contents .cloth_color > p:last-child {background-color: #04295a;}
+main .list_wrap .list_contents_wrap:nth-child(8) .cloth_contents .cloth_color > p:first-child {background-color: #881b08;}
+main .list_wrap .list_contents_wrap:nth-child(8) .cloth_contents .cloth_color > p:last-child {background-color: #04295a;}
+main .list_wrap .list_contents_wrap:nth-child(9) .cloth_contents .cloth_color > p:first-child {background-color: #ececb4;}
+main .list_wrap .list_contents_wrap:nth-child(9) .cloth_contents .cloth_color > p:last-child {background-color: #b5b6b8;}
+main .list_wrap .list_contents_wrap:nth-child(10) .cloth_contents .cloth_color > p:first-child {background-color: #b8230f;}
+main .list_wrap .list_contents_wrap:nth-child(10) .cloth_contents .cloth_color > p:last-child {background-color: #27272b;}
+main .list_wrap .list_contents_wrap:nth-child(11) .cloth_contents .cloth_color > p:first-child {background-color: #eaebb7;}
+main .list_wrap .list_contents_wrap:nth-child(11) .cloth_contents .cloth_color > p:last-child {background-color: #e3d1f7;}
+main .list_wrap .list_contents_wrap:nth-child(12) .cloth_contents .cloth_color > p:first-child {background-color: #09411e;}
+main .list_wrap .list_contents_wrap:nth-child(12) .cloth_contents .cloth_color > p:last-child {background-color: #3d1a0a;}
+main .list_wrap .list_contents_wrap:nth-child(13) .cloth_contents .cloth_color > p:first-child {background-color: #e6a7ff;}
+main .list_wrap .list_contents_wrap:nth-child(13) .cloth_contents .cloth_color > p:last-child {background-color: #fcc5ac;}
+/* 개별 색상 끝 */
 main .list_wrap .list_contents_wrap .cloth_contents .cloth_title,
 main .list_wrap .list_contents_wrap .cloth_contents .cloth_price {
     font-size: 0.88rem; letter-spacing: -0.02em;
