@@ -40,7 +40,12 @@ main .main_bnr::after {
     width: 100vw; height: 100%; z-index: 800;
     overflow: hidden;
 }
-main .main_bnr video {max-width: 100%;}
+main .main_bnr video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
 main .main_bnr > a {
     position: absolute; right: 25%; bottom: 32%;
     z-index: 850;
